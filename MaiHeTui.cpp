@@ -4,7 +4,7 @@ void SELL()
 	char ch;
 	do
 	{
-		printf("\n      ÊÇ·ñ¹ºÆ±?   (y/n)    ");
+		printf("\n      æ˜¯å¦è´­ç¥¨?   (y/n)    ");
 		ch = getchar();
 		gets(l);
 		if (ch != 'y'&&ch != 'n')
@@ -14,44 +14,44 @@ void SELL()
 	} while (ch != 'y'&&ch != 'n');
 	if (ch == 'y')
 	{
-		printf("\nÇëÊäÈëËùÂòÆ±Êı£¬°´»Ø³µ¼üÈ·ÈÏ£º  ");
+		printf("\nè¯·è¾“å…¥æ‰€ä¹°ç¥¨æ•°ï¼ŒæŒ‰å›è½¦é”®ç¡®è®¤ï¼š  ");
 		scanf("%d", &z);
 		gets(l);
-		printf("\n¹ºÂò³É¹¦ \n\n\n");
+		printf("\nè´­ä¹°æˆåŠŸ \n\n\n");
 	}
 }
 
 void TUI()
 {
 	char choice;
-	system("cls");           //ÇåÆÁ
-	printf("\n\n    =============== »¶Ó­½øÈë ÍËÆ± ½çÃæ===============\n");
+	system("cls");           //æ¸…å±
+	printf("\n\n    =============== æ¬¢è¿è¿›å…¥ é€€ç¥¨ ç•Œé¢===============\n");
 	do
 	{
 		char ch2;
 		char ch1;
 		char num[10];
-		printf("\n      ÊÇ·ñÒªÇóÍËÆ±?   (y/n)    ");
+		printf("\n      æ˜¯å¦è¦æ±‚é€€ç¥¨?   (y/n)    ");
 		scanf("%c", &ch2);
 		gets(l);
 		if (ch2 == 'n')
 			break;
 		else if (ch2 == 'y')
 		{
-			system("cls");           //ÇåÆÁ
-			printf("\n\nÇëÊäÈë³µ´ÎºÅ£¬°´»Ø³µ¼üÈ·ÈÏ£º  ");
+			system("cls");           //æ¸…å±
+			printf("\n\nè¯·è¾“å…¥è½¦æ¬¡å·ï¼ŒæŒ‰å›è½¦é”®ç¡®è®¤ï¼š  ");
 			scanf("%s", num);
 			gets(l);
 			READ();
 			for (i = 0; i < n; i++)
 			{
-				if (strcmp(num, T[i].hao) == 0)  //ÅĞ¶Ï×Ö·û´®±È½ÏÊÇ·ñÏàµÈ
+				if (strcmp(num, T[i].hao) == 0)  //åˆ¤æ–­å­—ç¬¦ä¸²æ¯”è¾ƒæ˜¯å¦ç›¸ç­‰
 				{
 					printf(GeShi);
 					printf(Print);
 					do
 					{
-						printf("\n        ÕæµÄÒªÍËÂğ  ?   (y/n)    ");
+						printf("\n        çœŸçš„è¦é€€å—  ?   (y/n)    ");
 						scanf("%c", &ch1);
 						gets(l);
 						if (ch1 != 'y'&&ch1 != 'n')
@@ -60,16 +60,16 @@ void TUI()
 							break;
 					} while (ch1 != 'y'&&ch1 != 'n');
 					if (ch1 == 'y')
-						printf("\n  ==================================ÍËÆ±³É¹¦ !==================================\n\n\n");
+						printf("\n  ==================================é€€ç¥¨æˆåŠŸ !==================================\n\n\n");
 				}
 				else
-					printf("\n      ²éÎŞ´Ë³µ \n   ");
+					printf("\n      æŸ¥æ— æ­¤è½¦ \n   ");
 			}
-			printf("\n\n                               -->ËÑË÷Íê±Ï<--     \n");
+			printf("\n\n                               -->æœç´¢å®Œæ¯•<--     \n");
 			do
 			{
-				system("cls");           //ÇåÆÁ
-				printf("\n\n                      --> ¼ÌĞøËÑË÷(1), ·µ»ØÖ÷²Ëµ¥(2) <--     ");
+				system("cls");           //æ¸…å±
+				printf("\n\n                      --> ç»§ç»­æœç´¢(1), è¿”å›ä¸»èœå•(2) <--     ");
 				choice = getchar();
 				gets(l);
 				if (choice != '1'&&choice != '2')
