@@ -1,17 +1,17 @@
 #include"some.h"
 void BREAK()
 {
-	system("cls");           //ÇåÆÁ
+	system("cls");           //æ¸…å±
 	printf("\n\n\n\n               ------------------------------------------------");
-	printf("\n                          ¸ÐÐ»Ê¹ÓÃ");
-	printf("\n\n                               Çë°´ÈÎÒâ¼üÍË³ö");
+	printf("\n                          æ„Ÿè°¢ä½¿ç”¨");
+	printf("\n\n                               è¯·æŒ‰ä»»æ„é”®é€€å‡º");
 	printf("\n\n               -----------------------------------------------                           ");
 	printf("      -----------------------------------------------\n                           ");
 }
 
 void WRONG()
 {
-	system("cls");           //ÇåÆÁ
-	printf("\n\n\n\n                 ---> ! ! ! ÊäÈë´íÎó£¬Çë°´ÈÎÒâ¼ü·µ»Ø ! ! ! <---    ");
+	system("cls");           //æ¸…å±
+	printf("\n\n\n\n                 ---> ! ! ! è¾“å…¥é”™è¯¯ï¼Œè¯·æŒ‰ä»»æ„é”®è¿”å›ž ! ! ! <---    ");
 	gets(l);
 }
